@@ -1,0 +1,160 @@
+body{
+    padding: 40px;
+}
+body::after {
+    content: "";
+    background-image: url("theme.png");
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  #stat{
+    list-style: none;
+  }
+#game{
+    display: none;
+    width: 100%;
+}
+#end{
+    display: none;
+    width: 100%;
+}
+.screen{
+    background-color: rgba(0, 0, 0, 0.48);
+    width: 70%;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    color: white;
+    padding:40px;
+
+}
+.screen h1{
+    margin:0;
+}
+.screen button{
+    padding: 15px;
+    margin: 0;
+    margin-top: 30px;
+}
+#left{
+    width: 100%;
+}
+#right{
+    width: 100%;
+
+}
+#seasons td{
+    text-align: center;
+    margin: auto;
+    width: 100px;
+}
+#seasons tr{
+    height: 100px;
+}
+#seasons {
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    text-align: center;    
+}
+#spring{
+    background-color: rgb(1, 129, 1);
+    border:  5px solid rgb(22, 90, 22);
+    border-radius: 20px;
+}
+#summer{
+    background-color: rgb(222, 222, 4);
+    border:  5px solid rgb(157, 149, 3);
+    border-radius: 20px;
+    
+}
+#autumn{
+    background-color: burlywood;
+    border:  5px solid rgb(109, 68, 1);
+    border-radius: 20px;
+}
+#winter{
+    background-color: rgb(4, 167, 188);
+    border:  5px solid rgb(49, 130, 167);
+    border-radius: 20px;
+}
+#result{
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+#board{
+    background-color: white;
+    border-radius: 3px;
+    border-spacing: 5px;
+    margin: auto;
+    color: rgba(0, 0, 0,0);
+}
+#board td{
+    background-color: wheat;
+    border-radius: 3px;
+    padding: 0;
+}
+h1{
+    margin-left: 100px;
+}
+#missions{
+    width: 100%;
+    color: rgba(255, 255, 255, 0);
+}
+#missions td{
+    height: 8em;
+    width: 50%;
+    padding-bottom: 10px;
+    color: white;
+    text-align: right;
+    vertical-align:bottom;
+    background-size: contain;
+    background-position: bottom;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+
+#block{
+    margin:0;
+    background-color: white;
+    width: 40%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#time{
+    width:max-content;
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    vertical-align: top;
+}
+#tetris{
+    height: fit-content;
+    width:60%;
+    border-spacing: 0;
+}
+#piece{
+    margin:auto;
+    color:rgba(0, 0, 0,0);
+    
+}
+button{
+    background-color: white;
+    border:none;
+    padding:10px;
+    width: 100px;
+    border-radius: 8px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+.buttonStyle{
+    text-align: right;
+}

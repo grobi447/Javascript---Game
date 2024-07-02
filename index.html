@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="menu">
+        <div class="screen">
+            <h1>Burgonya Térkép</h1>
+
+            <details>
+                <summary>Leírás</summary>
+                <p>Ebben az egyszemélyes játékban egy 11x11-es négyzetrácsos térképre kell lehelyezni különböző
+                    alakzatú, különböző tereptípusú térképelemeket. Minden elemhez tartozik egy időérték (1 vagy 2), a
+                    játék 28 időegységből áll. A játék végén (vagy közben) a négyzetrács aktuális állapota alapján kell
+                    pár ellenőrzést (küldetést) elvégezni, és ez alapján alakul ki a végső pontszám.
+                </p>
+            </details>
+            <button>start</button>
+        </div>
+
+    </div>
+
+    </div>
+    <div id="game">
+        <div id="left">
+            <h1>Burgonya térkép</h1>
+            <table id="board"></table>
+        </div>
+        <div id="right">
+            <table id="seasons">
+                <tr>
+                    <td id="spring">Tavasz:</td>
+                    <td id="summer">Nyár:</td>
+                    <td id="autumn">Ősz:</td>
+                    <td id="winter">Tél:</td>
+                </tr>
+            </table>
+            <p id="result">Összesen:</p>
+            <h2 id="current_stat"> Jelenlegi évaszak:</h2>
+            <hr>
+            <table id="missions"></table>
+            <h2 id="remainingTime">Évszakból hátralévő idő:</h2>
+            <hr>
+            <table id="tetris">
+                <tr>
+                    <td>
+                        <h2>Lehelyezendő elem:</h2>
+                    </td>
+
+                    <td rowspan="3" id="block">
+                        <table id="piece"></table>
+                    </td>
+                    <td rowspan="3" id="time">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="buttonStyle"> <button id="rotate">Forgatás</button></td>
+                </tr>
+                <tr>
+                    <td class="buttonStyle"><button id="mirror">Tükrözés</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="end">
+        <div class="screen">
+            <h1>Game Over</h1>
+            <h2>Statisztika:</h2>
+            <ul id="stat">
+                <li id="spingStat"></li>
+                <li id="summerStat"></li>
+                <li id="autumnStat"></li>
+                <li id="winterStat"></li>
+                <hr>
+                <li id="missionA"></li>
+                <li id="missionB"></li>
+                <li id="missionC"></li>
+                <li id="missionD"></li>
+                <hr>
+                <li id="mountainsAround"></li>
+                <li id="sumAll"></li>
+            </ul>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
